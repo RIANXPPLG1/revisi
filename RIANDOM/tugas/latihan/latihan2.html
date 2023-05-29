@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Latihan Mengambil Elemen di JavaScript</title>
+</head>
+<body>
+  <ul id="daftar">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <script>
+   let daftar = document.querySelectorAll('li')
+    for(let i = 0;i < daftar.length; i++ ){
+        console.log(daftar[i].innerHTML)
+    }
+  </script>
+</body>
+</html>
+

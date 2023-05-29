@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+  width: 150px;
+  height: 60px;
+  border: 3px solid #315cfd;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 1.2em;
+  font-weight: 550;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+  background: #315cfd;
+  color: white;
+  font-size: 1.5em;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <h1 id="bapak"><b>hallo</b></h1>
+        <p class="paragrap" id="paragrap1"><b>paragrap1</b></p>
+        <p class="paragrap">paragrap2</p>
+        <p class="paragrap">paragrap3</p>
+
+    </div>
+
+        <input type="text" id="text">
+        <button id="kirim" onclick="kirim()">kirim</button>
+
+        <input type="text" id="input" value="ayam dani">
+        <script>
+
+          
+            var element = document.getElementById('paragrap1');
+            var node = document.getElementById('bapak');
+        //     element.style.backgroundColor='red';
+        //   element.innerText = 'baru'
+
+          console.log(element.innerText = 'html update')
+          console.log(element.innerHTML = 'html update')
+
+
+        //   var input = document.getElementById('input');
+          console.log(document.getElementById('input').value)
+
+        //     for(let i = 0; i < 5; i++){
+        //     console.log(element.innerText)
+        // }
+
+    
+
+
+            function kirim(){
+                var huruf =document.getElementById("text").value;
+                console.log(huruf)
+            }
+
+
+
+
+//--------------------------------------------------------------------------
+            //query selector
+            console.log(document.querySelector(".paragrap"));
+            // console.log(document.querySelector(".paragrap").innerHTML);
+            console.log(document.querySelectorAll(".paragrap")[1].innerHTML);
+
+            //berdasarkan id
+            console.log(document.getElementById("parent"));
+            //berdsarkan nama class
+            console.log(document.getElementsByClassName("paragrap")[0]);
+            //berdasarkan nama tag 
+            console.log(document.getElementsByTagName("div"));
+        </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Latihan Mengambil Elemen di JavaScript</title>
+  <style>
+    .merah { color: red; }
+    .besar { font-size: 24px; }
+    .tebal { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div id="kontainer" class="merah besar tebal">Ini adalah teks</div>
+
+  <script>
+    var kontainer = document.getElementById("kontainer");
+var classList = kontainer.classList;
+
+console.log(Array.from(classList));
+
+  </script>
+</body>
+</html>

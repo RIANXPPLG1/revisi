@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="bapak">
+        <p>rian</p>
+        <p>jajang</p>
+        <p>asan</p>
+        <div class="mama">
+            <h1 id="kaka">makanan favorite rian</h1>
+            <ul>
+                <li>nasgor</li>
+                <li>miegor</li>
+                <li>ayam ippo</li>
+            </ul>
+        </div>
+
+
+    </section>
+
+
+        <script>
+
+            // let bapak = document.getElementById("bapak");
+            // for(let i = 0; i < 3; i++){
+            //     console.log(bapak.children[i].innerHTML)
+
+            
+            //  }
+            //     bapak.style.backgroundColor='aqua';
+            let bapak = document.querySelectorAll("section#bapak p");
+            //     // for(let i = 0; i <bapak.length; i++){
+            //     //     console.log('nama :'+bapak[i].innerHTML)
+
+
+            //     // }
+
+                let makanankesukaan = document.querySelectorAll('div.mama ul li')
+                
+                for(let i = 0; i <makanankesukaan.length; i++){
+                console.log('nama :'+bapak[i].innerHTML+' '+'makanan kesukaan :' + makanankesukaan[i].innerHTML)    
+                }
+
+
+
+            // var anak = document.getElementsByTagName("p");
+            // // console.log(anak)
+            
+            // for(let i = 0; i < anak.length; i++){
+            //     console.log(anak[i].innerHTML)
+            //     anak[i].style.color='red';
+                
+            // }
+
+
+        </script>
+</body>
+</html>

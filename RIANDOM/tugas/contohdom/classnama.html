@@ -1,0 +1,19 @@
+<script>
+    class person{
+        kesehatan ='';
+        #suhu = 0;
+
+        set suhu(suhu){
+            if(suhu > 37 && suhu <= 100){
+                this.kesehatan = 'terkena demam';
+
+            }else if (suhu > 20 && suhu <= 37){
+                this.kesehatan = 'normal';
+            }
+        }
+    }
+
+    var person1 = new person();
+    person1.suhu = 37
+    console.log(person1.kesehatan);
+</script>
